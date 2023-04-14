@@ -1,0 +1,52 @@
+h3{
+    font-size: 40px;
+    text-align: center;
+    background-color: bisque;
+}
+
+.main-image{
+    width: 100%;
+    height: auto;
+}
+
+.build-form{
+    margin: 5px;
+    font-size: larger;
+}
+
+h4{
+    font-size: 30px;
+}
+
+.choice-size{
+    background-color: cadetblue;
+}
+
+.select{
+    background-color: blanchedalmond;
+    width: 100%;
+    font-size: 20px;
+}
+
+.choice{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.check{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px;
+    border-color: black;
+    background-color: blanchedalmond;
+}
+
+.sauce{
+    background-color: blanchedalmond;
+}
+
+.gluten{
+    background-color: rgb(201, 123, 123);
+}
