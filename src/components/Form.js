@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import {Link, useHistory} from "react-router-dom"
+import {Link} from "react-router-dom"
 import "./Form.css"
 
 
@@ -30,7 +30,7 @@ export default function PizzaForm(props) {
         submit();
     }
     return (
-        <form className="pizza-form" onSubmit={onSubmit}>
+        <form id="pizza-form" className='#pizza-form' onSubmit={onSubmit}>
         <div className="build-own">
             <h3>Build Your Own Pizza</h3>
             <img
@@ -41,7 +41,7 @@ export default function PizzaForm(props) {
             <div className="build-form">
            <h4>Build Your Own Pizza</h4>
                 
-                <label className="size-dropdown">
+                <label className="size-dropdown" id="size-dropdown">
                     <div className="choice-size">
                 <p className="choice">Choice of Size</p>    
                 <p>Required</p><br></br>
@@ -229,13 +229,13 @@ export default function PizzaForm(props) {
                     </label>
                     </div>
                     <div className="instruction">
-                        <label className="#special-text">
+                        <label id="special-text" className="special-text">
                         <div className="choice-size">
                             <p className="choice">Special Instruction</p>
                             <p>{errors.special}</p>
                             </div>
                             <input 
-                                className="#name-input"
+                                id="name-input"
                                 placeholder="Anything else you'd like to add?"
                                 value={instruction}
                                 onChange={onChange}
@@ -250,7 +250,7 @@ export default function PizzaForm(props) {
                                 value={value}
                                 onChange={handleChange}
                             /><div className='submit-button'>
-                           <Link to="/confirmation"><input type="submit" value="Place the order!"/></Link>
+                           <input type="submit" value="Place the order!"/>
                         </div>
                             
                         </div>
